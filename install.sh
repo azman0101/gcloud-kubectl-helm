@@ -32,6 +32,11 @@ chmod 755 /usr/local/bin/sops
 curl --silent --show-error --fail --location --output /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/"${YQ_BIN_VERSION}"/yq_linux_amd64
 chmod 755 /usr/local/bin/yq
 
+# vals backend installation (optional)
+RUN curl -fsSL https://github.com/helmfile/vals/releases/download/v${VALS_VERSION}/vals_${VALS_VERSION}_linux_amd64.tar.gz \
+    | tar xzf - -C /usr/local/bin/ vals \
+    && chmod +x /usr/local/bin/vals
+
 # set permissions
 mkdir -p /data
 chown gkh /data /entrypoint.sh /data/commands.sh
