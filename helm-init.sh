@@ -13,6 +13,7 @@ else
     helm plugin install https://github.com/jkroepke/helm-secrets --version v4.2.2
     helm plugin install https://github.com/hayorov/helm-gcs.git --version 0.4.1
     helm plugin install https://github.com/databus23/helm-diff --version 3.6.0
+    helm plugin install https://github.com/helm/helm-mapkubeapis --version 0.3.2
     helm plugin list
 fi
 
