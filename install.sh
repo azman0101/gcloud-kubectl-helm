@@ -41,4 +41,3 @@ RUN curl -fsSL https://github.com/helmfile/vals/releases/download/v${VALS_VERSIO
 mkdir -p /data
 chown gkh /data /entrypoint.sh /data/commands.sh
 chmod +x /entrypoint.sh /data/commands.sh
-
