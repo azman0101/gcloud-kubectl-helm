@@ -1,6 +1,8 @@
 
 FROM google/cloud-sdk:432.0.0-alpine
 
+LABEL org.opencontainers.image.source="https://github.com/renovatebot/renovate"
+
 # renovate: datasource=github-release depName=helm/helm extractVersion="^v(?<version>.*)$"
 ENV HELM_VERSION v3.8.2
 ENV HELM2_VERSION v2.17.0
