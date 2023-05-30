@@ -16,4 +16,3 @@ else
     helm plugin install https://github.com/helm/helm-mapkubeapis --version "${HELM_MAPKUBEAPIS_VERSION}"
     helm plugin list
 fi
-
