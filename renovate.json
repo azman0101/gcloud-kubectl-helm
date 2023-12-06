@@ -11,7 +11,7 @@
 		  "matchDatasources": ["github-releases"],
 		  "matchManagers": ["dockerfile"],
 		  "matchUpdateTypes": ["minor", "patch"],
-		  "automerge": false
+		  "automerge": true
 		}
 	  ]
 }
