@@ -3,5 +3,15 @@
 	"extends": [
 		"config:base",
 		":dependencyDashboard"
-	]
+	],
+	"packageRules": [
+		{
+		  "description": "Helper tools for docker base images",
+		  "groupName": "docker helper tools",
+		  "matchDatasources": ["github-releases"],
+		  "matchManagers": ["dockerfile"],
+		  "matchUpdateTypes": ["minor", "patch"],
+		  "automerge": false
+		}
+	  ]
 }
