@@ -1,5 +1,5 @@
 
-FROM google/cloud-sdk:459.0.0-alpine
+FROM google/cloud-sdk:460.0.0-alpine
 
 LABEL org.opencontainers.image.source="https://github.com/azman0101/gcloud-kubectl-helm"
 
